@@ -1,0 +1,2 @@
+rootProject.name='HelpingHands-Admin'
+include ':app'

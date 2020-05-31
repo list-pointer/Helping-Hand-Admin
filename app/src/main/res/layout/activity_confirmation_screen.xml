@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmation_screen"
+    android:fillViewport="true"
+    android:background="#F5F5FF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Details"
+                android:textSize="30dp"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_user"
+                android:text="User Details"
+                android:textSize="25dp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_username"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_tv_user"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_username"
+                android:textSize="25dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_tv_user"
+                android:layout_toRightOf="@id/confirmation_tv_userdisability"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_usernumber"
+                android:text="Phone"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_et_username"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_usernumber"
+                android:textSize="25dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_et_username"
+                android:layout_toRightOf="@id/confirmation_tv_userdisability"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_userdisability"
+                android:text="Disability"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_et_usernumber"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_userdisability"
+                android:textSize="25dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_et_usernumber"
+                android:layout_toRightOf="@id/confirmation_tv_userdisability"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmation_tv_guardian"
+                    android:text="Guardian Details"
+                    android:textSize="25dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmation_tv_guardianname"
+                    android:text="Name"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/confirmation_tv_guardian"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmation_et_guardianname"
+                    android:textSize="25dp"
+                    android:textColor="#959595"
+                    android:background="@drawable/bg_et"
+                    android:layout_below="@+id/confirmation_tv_guardian"
+                    android:layout_toRightOf="@id/confirmation_tv_guardiannumber"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmation_tv_guardiannumber"
+                    android:text="Phone"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/confirmation_et_guardianname"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmation_et_guardiannumber"
+                    android:textSize="25dp"
+                    android:textColor="#959595"
+                    android:background="@drawable/bg_et"
+                    android:layout_below="@+id/confirmation_et_guardianname"
+                    android:layout_toRightOf="@id/confirmation_tv_guardiannumber"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/registration_bottom"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"
+            >
+
+            <Button
+                android:id="@+id/confiramtion_ViewLocationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="View location"
+                android:textSize="20dp"
+                android:onClick="viewLocation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/confiramtion_ViewLocationButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rejectbutton"
+                    android:text="Reject"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="RejectPressed"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="15dp"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/acceptbutton"
+                    android:text="Accept"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="acceptRequest"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="15dp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

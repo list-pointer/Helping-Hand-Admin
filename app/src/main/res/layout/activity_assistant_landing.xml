@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmation_screen"
+    android:fillViewport="true"
+    android:background="#F5F5FF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/applogo_64"
+                android:id="@+id/logo"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helping Hands"
+                android:textSize="30dp"
+                android:textColor="#333333"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/logoutButton"
+                android:src="@drawable/ic_logouticon"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/assistantlanding_rl_userPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="550px"
+                android:background="@drawable/bg_profile_image"
+                android:layout_centerInParent="true"
+                >
+                <ImageView
+                    android:layout_width="500px"
+                    android:layout_height="500px"
+                    android:id="@+id/assistantLanding_profile_image"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/assistantlanding_rl_userdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_user"
+                android:text="User Details"
+                android:textSize="25dp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_username"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_tv_user"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_username_assistantLanding"
+                android:textSize="20dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_tv_user"
+                android:layout_toRightOf="@id/confirmation_tv_userdisability"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_usernumber"
+                android:text="Phone"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_et_username_assistantLanding"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_usernumber_assistantLanding"
+                android:textSize="20dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_et_username_assistantLanding"
+                android:layout_toRightOf="@id/confirmation_tv_userdisability"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_userdisability"
+                android:text="Disability"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_et_usernumber_assistantLanding"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_userdisability_assistantLanding"
+                android:textSize="20dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_et_usernumber_assistantLanding"
+                android:layout_toRightOf="@id/confirmation_tv_userdisability"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/assistantlanding_rl_guardiandata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_guardian"
+                android:text="Guardian Details"
+                android:textSize="25dp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_guardianname"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_tv_guardian"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_guardianname_assistantLanding"
+                android:textSize="20dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_tv_guardian"
+                android:layout_toRightOf="@id/confirmation_tv_guardiannumber_assistantLanding"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_tv_guardiannumber_assistantLanding"
+                android:text="Phone"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/confirmation_et_guardianname_assistantLanding"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_et_guardiannumber_assistantLanding"
+                android:textSize="20dp"
+                android:textColor="#959595"
+                android:background="@drawable/bg_et"
+                android:layout_below="@+id/confirmation_et_guardianname_assistantLanding"
+                android:layout_toRightOf="@id/confirmation_tv_guardiannumber_assistantLanding"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/registration_bottom"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"
+            >
+
+            <Button
+                android:id="@+id/confiramtion_ViewLocationButton_assistantLanding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="View location"
+                android:textSize="20dp"
+                android:onClick="viewLocation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="15dp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/assistantLanding_tv_norequesttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_et"
+                android:text="No Requests available"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="15dp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
